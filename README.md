@@ -21,39 +21,23 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd path/to/cloned/repository
 ```
 
-Install dependencies
+Compile application:
 
 ```bash
-  npm install
+  go build
 ```
 
-Start the server
-
-```bash
-  npm run start
-```
-
-
-## Usage/Examples
-
-```javascript
-import Component from 'my-project'
-
-function App() {
-  return <Component />
-}
-```
 
 
 ## Features
 
-- Light/dark mode toggle
-- Live previews
-- Fullscreen mode
-- Cross platform
+- Install client and unzip it from server
+- Install new updates with ease
+- Install custom url protocols
+- Install required things
 
 
 ## API Reference
