@@ -15,7 +15,7 @@ In order to run this locally, we are required to install go programming language
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/PlayCubern/Cubern-Launcher.git
 ```
 
 Go to the project directory
@@ -41,26 +41,6 @@ Compile application:
 
 
 ## API Reference
-
-#### Get all items
-
-```http
-  GET /api/items
-```
-
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `api_key` | `string` | **Required**. Your API key |
-
-#### Get item
-
-```http
-  GET /api/items/${id}
-```
-
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of item to fetch |
 
 #### add(num1, num2)
 
