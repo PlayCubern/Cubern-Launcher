@@ -37,7 +37,7 @@ Compile application:
 - Install client and unzip it from server
 - Install new updates with ease
 - Install custom url protocols
-- Install required things
+- Standalone build
 
 
 ## API Reference
