@@ -42,7 +42,6 @@ Compile application:
 
 ## API Reference
 
-#### add(num1, num2)
+#### setRegistryValue(key, valueName, value)
 
-Takes two numbers and returns the sum.
 
