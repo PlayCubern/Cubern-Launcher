@@ -12,13 +12,9 @@ Cubern is an online sandbox where the creativity never ends. Users can customize
 
 In order to run this locally, we are required to install go programming language on our computer! 
 
-Clone the project
+Clone the project by either using git or by clicking the green code button and downloading as zip
 
-```bash
-  git clone https://github.com/PlayCubern/Cubern-Launcher.git
-```
-
-Go to the project directory
+Go to the project directory where you extracted it
 
 ```bash
   cd path/to/cloned/repository
@@ -42,6 +38,9 @@ Compile application:
 
 ## API Reference
 
-#### setRegistryValue(key, valueName, value)
+#### • setRegistryValue(key, valueName, value)
+Modifys registry values of windows
 
+## Why?
+The reason behind making the installer open source is none other then to prevent suspicious activities. But how this would help refrain you may ask. Well, as the installer requires administrative permissions to do its things, it can look sketchy like a virus.
 
