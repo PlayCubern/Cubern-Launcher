@@ -31,7 +31,6 @@ Compile application:
 ## Features
 
 - Install client and unzip it from server
-- Install new updates with ease
 - Install custom url protocols
 - Standalone build
 
