@@ -35,6 +35,12 @@ Compile application:
 - Install custom url protocols
 - Standalone build
 
+## Dependencies
+The installer uses [Gowin](https://github.com/luisiturrios1/gowin) in order to create or modify windows registry files, it could be installed by simply running:
+
+```bash
+  go get github.com/luisiturrios/gowin
+```
 
 ## API Reference
 
