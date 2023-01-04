@@ -7,8 +7,10 @@ Cubern is an online sandbox where the creativity never ends. Users can customize
 
 - [@OoIks](https://www.github.com/OoIks)
 
+Helping the tool become more optimizations could earn your name being here, open a [pull request](https://github.com/PlayCubern/Cubern-Launcher/pulls) if you want to suggest a change!
 
-## Run Locally
+
+## Running Locally
 
 In order to run this locally, we are required to install go programming language on our computer! 
 
@@ -17,7 +19,7 @@ Clone the project by either using git or by clicking the green code button and d
 Go to the project directory where you extracted it
 
 ```bash
-  cd path/to/cloned/repository
+  cd path/to/extracted/repository
 ```
 
 Compile application:
@@ -43,8 +45,11 @@ The installer uses [Gowin](https://github.com/luisiturrios1/gowin) in order to c
 
 ## API Reference
 
-#### • setRegistryValue(key, valueName, value)
-Modifys registry values of windows
+#### • downloadFile(url, string)
+Gets a online file and downloads on the computer using the "net/http" package
+
+#### • unzipFile(src string, dest string)
+Unzips a local file
 
 ## Why?
 The reason behind making the installer open source is none other then to prevent suspicious activities. But how this would help refrain you may ask. Well, as the installer requires administrative permissions to do its things, it can look sketchy like a virus.
