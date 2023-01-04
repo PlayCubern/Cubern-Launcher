@@ -502,8 +502,8 @@ func main() {
 
 
 
-	  KeyString := "\"" + filepath.Join(cwd, "Cubern.exe") + "\" \"%1\""
-     BuildRootFolder := gowin.WriteStringReg("HKCR", `Cubern\shell\open\command`, "", KeyString)
+      KeyString := "\"" + filepath.Join(cwd, "Cubern.exe") + "\" \"%1\""
+      BuildRootFolder := gowin.WriteStringReg("HKCR", `Cubern\shell\open\command`, "", KeyString)
       if BuildRootFolder != nil {
          fmt.Println(BuildRootFolder)
      } else {
