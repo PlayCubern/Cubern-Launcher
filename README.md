@@ -54,3 +54,6 @@ Unzips a local file
 ## Why?
 The reason behind making the installer open source is none other then to prevent suspicious activities. But how this would help refrain you may ask. Well, as the installer requires administrative permissions to do its things, it can look sketchy like a virus.
 
+## Our Discord!
+Join our discord  [here](https://dsc.gg/Cubern) <br>
+![Dsc](https://img.shields.io/discord/1000052563711901767)
