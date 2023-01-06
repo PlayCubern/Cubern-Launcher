@@ -14,7 +14,7 @@ Helping the tool become more optimizations could earn your name being here, open
 
 As this project is available for you to use for your sandbox or even your game, here is a detailed and a easy guide on setting it up:
 
-1 - We first install golang from the official (website)[https://go.dev/doc/install] <br>
+1 - We first install golang from the official [website](https://go.dev/doc/install) <br>
 2 - Run the installer and then clone or download the repository <br>
 3 - Open the extracted repository in visual studio code <br>
 4 - Now open the terminal and run:
