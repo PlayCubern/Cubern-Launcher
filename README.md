@@ -12,23 +12,41 @@ Helping the tool become more optimizations could earn your name being here, open
 
 ## Running Locally
 
-In order to run this locally, we are required to install go programming language on our computer! 
+As this project is available for you to use for your sandbox or even your game, here is a detailed and a easy guide on setting it up:
 
-Clone the project by either using git or by clicking the green code button and downloading as zip
-
-Go to the project directory where you extracted it
-
-```bash
-  cd path/to/extracted/repository
-```
-
-Compile application:
+1 - We first install golang from the official (website)[https://go.dev/doc/install] <br>
+2 - Run the installer and then clone or download the repository <br>
+3 - Open the extracted repository in visual studio code <br>
+4 - Now open the terminl and run:
 
 ```bash
-  go build
+go version
+``` 
+
+if it successfully returns the version, go is installed on your computer! <br>
+5 - now we install [Gowin](https://github.com/luisiturrios1/gowin) which is required to run the essential part, building the protocols. We do that by running this into the visual studio code's console: 
+```bash
+   go get github.com/luisiturrios/gowin
+``` 
+<br>
+6 - We have now installed the dependencies! Now we edit the code to make it work with your project! At line 478 we check if the client is installed, replace Cubern.exe with your .exe's name such as: mygame.exe <br>
+
+7 - Now we install the file from online server at line 485 replace it with your url! <br>
+
+8 - Now you are to configure your registry which is done at line 504 to 505! Such as instead of:
+
+```bash
+KeyString := "\"" + filepath.Join(cwd, "Cubern.exe") + "\" \"%1\""
+``` 
+you make it to:
+```bash
+KeyString := "\"" + filepath.Join(cwd, "MyGame.exe") + "\" \"%1\""
 ```
-
-
+please remember to make sure that the .exe is same as the exe name in the online zip!
+And at line 505, you replace Cubern with yourgame and after configuring, save the file and using visual studio code's terminal, build it using:
+```bash
+go build
+```
 
 ## Features
 
