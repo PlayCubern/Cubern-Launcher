@@ -17,7 +17,7 @@ As this project is available for you to use for your sandbox or even your game, 
 1 - We first install golang from the official (website)[https://go.dev/doc/install] <br>
 2 - Run the installer and then clone or download the repository <br>
 3 - Open the extracted repository in visual studio code <br>
-4 - Now open the terminl and run:
+4 - Now open the terminal and run:
 
 ```bash
 go version
