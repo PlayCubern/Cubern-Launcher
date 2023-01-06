@@ -395,7 +395,6 @@ import (
 
 
 func downloadFile(url string) error {
-    startTime := time.Now()
   
     out, err := os.Create("file.zip")
     if err != nil {
@@ -470,11 +469,11 @@ func unzipFile(src string, dest string) error {
 func main() {
     fmt.Println("Please wait while Cubern starts to initialize!")
     
-	cwd, err := os.Getwd()
-  if err != nil {
-      fmt.Println(err)
-      return
-  }
+    cwd, err := os.Getwd()
+    if err != nil {
+        fmt.Println(err)
+        return
+    }
 
   _, err = os.Stat(filepath.Join(cwd, "Cubern.exe"))
   if err == nil {
