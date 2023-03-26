@@ -376,8 +376,6 @@ Exhibit B - "Incompatible With Secondary Licenses" Notice
   
 */
 
-
-
 package main
 
 import (
@@ -389,8 +387,6 @@ import (
     "path/filepath"
     "strings"
     "github.com/luisiturrios/gowin"
-    "strconv"
-    "time"
 )
 
 
@@ -412,7 +408,7 @@ func downloadFile(url string) error {
     if err != nil {
         return err
     }
-
+    _ = n
     return nil
 }
 
@@ -482,7 +478,7 @@ func main() {
   } else if os.IsNotExist(err) {
       fmt.Println("Cubern.exe does not exist, proceeding with download and unzip")
 
-     err = downloadFile("https://server.cubern.xyz/Clients/Cubern.zip")
+     err = downloadFile("x")
       if err != nil {
           fmt.Println(err)
           return
@@ -502,11 +498,19 @@ func main() {
 
 
       KeyString := "\"" + filepath.Join(cwd, "Cubern.exe") + "\" \"%1\""
-      BuildURLProtocolKey = gowin.WriteStringReg("HKCR", `Cubern`, "", "URL Protocol")
+      BuildURLProtocolKey := gowin.WriteStringReg("HKCR", `Cubern`, "", "URL:Custom Protocol")
       BuildRootFolder := gowin.WriteStringReg("HKCR", `Cubern\shell\open\command`, "", KeyString)
+      BuildRootValue := gowin.WriteStringReg("HKCR", `Cubern`, "URL Protocol", "")
+
       if BuildRootFolder != nil {
          fmt.Println(BuildRootFolder)
      } else {
          fmt.Println("Key inserted")
+     }
+     if BuildURLProtocolKey != nil {
+        fmt.Println("Initialized")
+     }
+     if BuildRootValue != nil {
+        fmt.Println("Done!")
      }
 }
